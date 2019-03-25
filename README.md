@@ -27,18 +27,18 @@ Input: .txt file
       
 Compiling Instructions 
 
-      Method 1:
-      Open project file and build solution from VS Studio
+Method 1:
+Open project file and build solution from VS Studio
 
-      Method 2: 
-      Compile via VS Studio Developer CMD 
+Method 2: 
+Compile via VS Studio Developer CMD 
 
             cl *.c 
      
 Launching Instructions
       
-      Shift right click folder 
-      Open Windows Powershell
+Shift right click folder 
+Open Windows Powershell
             
             ./solver file-name.txt 1
             
@@ -48,11 +48,11 @@ Launching Instructions
 
 Note: Turning partial pivoting functionality on/off 
            
-      Partial Pivoting = True 
+Partial Pivoting = True 
       
            ./solver file-name.txt 1
            
-      Partial Pivoting = False 
+Partial Pivoting = False 
       
            ./solver file-name.txt 0
            
