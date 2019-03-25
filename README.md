@@ -22,3 +22,31 @@ Input: .txt file
       .
       .    -6.0 -7.0 14.0 -4.0
       L     4.0 -8.0  9.0  6.0*/
+      
+      
+      
+Compiling Instructions 
+
+      Method 1:
+      Open project file and build solution from VS Studio
+
+      Method 2: 
+      Compile via VS Studio Developer CMD 
+
+            cl *.c 
+     
+Launching Instructions
+      
+      Shift right click folder 
+      Open Windows Powershell
+            
+            ./solver file-name.txt 1
+            
+      OR
+      
+           ./lu file-name.txt 1 
+
+Note: For partial pivoting functionality use 1 after file-name.txt or 0 without partial pivoting functionality 
+
+
+
