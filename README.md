@@ -1,5 +1,6 @@
 # Systems of Equation Solver
 Put systems of equations into matrix form Ax=B
+
              2.0  3.0 -4.0  2.0
       A =   -4.0 -5.0  6.0 -3.0
              2.0  2.0  1.0  0.0
@@ -7,7 +8,8 @@ Put systems of equations into matrix form Ax=B
        
       B = 4.0 -8.0  9.0  6.0
 
-Input: .txt file 
+Input: .txt file
+
       Size of square matrix 
       A
       B
