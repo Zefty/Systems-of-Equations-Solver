@@ -46,7 +46,20 @@ Launching Instructions
       
            ./lu file-name.txt 1 
 
-Note: For partial pivoting functionality use 1 after file-name.txt or 0 without partial pivoting functionality 
+Note: Turning partial pivoting functionality on/off 
+           
+      Partial Pivoting = True 
+      
+           ./solver file-name.txt 1
+           
+      Partial Pivoting = False 
+      
+           ./solver file-name.txt 0
+           
+           
+           
+           
+             
 
 
 
