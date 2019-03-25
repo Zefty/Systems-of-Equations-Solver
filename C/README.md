@@ -4,8 +4,7 @@ Method 1:
 Open project file and build solution from VS Studio
 
 Method 2: 
-Run 
+Execut in VS Studio Developer CMD 
       
       cl *.c 
 
-In developer console 
