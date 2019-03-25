@@ -1,0 +1,49 @@
+# ENGSCI233: Lab - Error
+# errlab_questions.txt
+
+# PURPOSE:
+# Answer questions related to floating point errors introduced when solving ill-conditioned matrices.
+
+# SUBMISSION:
+# - You MUST submit this file. 
+# - DO NOT rename this file.
+
+# QUESTION 1:
+# What type of floating point error has been introduced?
+
+# ANSWER 1:
+# **For a general matrix the floating point errors could be representation error (e.g. the subtraction
+factor when we divide by the pivot value), rounding error (e.g. the row reduction operations), and
+error accumulation (e.g. the repeated row reductions). The floating point error that we observe
+in test2.txt is mainly error due to machine precision.**
+
+# QUESTION 2:
+# How did this occur?
+
+# ANSWER 2:
+# **Floating point numbers are represented with a significand multiplied by a base to an exponent. This 
+means that there are limitations to how precise numbers can be represented, and resulting in the machine 
+precision error that is occuring in test2.txt without partial pivoting. 
+
+When we do addition and subtraction of two floating point numbers they both have to be stored with the 
+same base and exponent of the larger number. From this we can deduce that the machine precision error occured 
+during the last row reduction calculation (100^10+1), where 1 cannot be precisely represented with the 
+same exponent as the larger value of 100^10, so it is represented as a 0. When we add these two values together 
+we get 100^10 rather than 100^10+1. For 100^10, there is a value that exists where any number less than this 
+value will exhibit this property of machine precision error. This value will is defined as computer zero**
+
+
+# QUESTION 3:
+# How does partial pivoting address this issue?
+
+# ANSWER 3:
+# **Partial pivoting addresses the machine precision error by simply ensuring that the pivot value before each
+iteration of row reduction is the largest, which ensures that the subtraction factor for each row is always less
+than or equal to one. We want each iteration of row reduction to use a small subtraction factor such that the 
+other coefficients of the row does not get larger after every iteration; otherwise, we would run into machine 
+precision error similar to test2.txt. This type of error would likely occur in very large n*n matricies where 
+the subtraction factor for every iteration of row reduction is also very large. 
+
+While we can eliminate the machine precision error with partial pivoting, other errors are still present such as 
+rounding and representation error of numbers. However, the rate of increase in these types of error would be 
+much lower than that of errors induced by the absense of partial pivoting.**
