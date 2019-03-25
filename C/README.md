@@ -1,10 +1,17 @@
 Compiling Instructions 
 
-Method 1:
-Open project file and build solution from VS Studio
+      Method 1:
+      Open project file and build solution from VS Studio
 
-Method 2: 
-Execut in VS Studio Developer CMD 
+      Method 2: 
+      Compile via VS Studio Developer CMD 
+
+            cl *.c 
+     
+Launching Instructions
       
-      cl *.c 
+      Shift right click folder 
+      Open Windows Powershell
+            
+            ./solver test1.txt 1
 
