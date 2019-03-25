@@ -24,7 +24,8 @@ Input: .txt file
       L     4.0 -8.0  9.0  6.0*/
       
       
-      
+
+
 Compiling Instructions 
 
 Method 1:
@@ -37,8 +38,7 @@ Compile via VS Studio Developer CMD
      
 Launching Instructions
       
-Shift right click folder 
-Open Windows Powershell
+Shift right click folder and open Windows Powershell
             
             ./solver file-name.txt 1
             
