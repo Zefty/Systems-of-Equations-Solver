@@ -26,17 +26,17 @@ Input: .txt file
       
 
 
-Compiling Instructions 
+## Compiling Instructions ## 
 
-Method 1:
+### Method 1: ###
 Open project file and build solution from VS Studio
 
-Method 2: 
+### Method 2: ###
 Compile via VS Studio Developer CMD 
 
             cl *.c 
      
-Launching Instructions
+## Launching Instructions ## 
       
 Shift right click folder and open Windows Powershell
             
