@@ -36,7 +36,7 @@ Compile via VS Studio Developer CMD
 
             cl *.c 
      
-Launching Instructions
+## Launching Instructions ## 
       
 Shift right click folder and open Windows Powershell
             
