@@ -1,2 +1,2 @@
-**LU Factor and Partial Pivoting 
+LU Factor and Partial Pivoting 
 Solve systems of equations 
