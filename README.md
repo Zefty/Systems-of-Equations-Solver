@@ -1,2 +1,3 @@
-LU Factor and Partial Pivoting 
-Solve systems of equations 
+# Systems of Equation Solver
+Solve systems of equations!
+(So far only works n*n matricies) 
