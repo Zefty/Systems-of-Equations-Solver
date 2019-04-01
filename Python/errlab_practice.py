@@ -112,4 +112,3 @@ assert norm(y[:,0] - y_soln) < tol
 x = lu_backward_sub(LU, y) 	
 x_soln = np.array([1, 2, 3, 4])						# correct output of LU_BACKWARD_SUB
 assert norm(x[:,0] - x_soln) < tol
-
