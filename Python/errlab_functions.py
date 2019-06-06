@@ -99,8 +99,9 @@ def lu_factor(A, pivot=False, display=False):
 		for r in range(i+1,n):
 			sf = A[r,i]/pivot_value
 
-			for c in range(i,n):
-				A[r,c] = A[r,c] - sf*A[i,c]
+			#for c in range(i,n):
+				#A[r,c] = A[r,c] - sf*A[i,c]
+			A[r,i:n] = A[r,i:n] - (sf*A[i,i:n])
 
 			A[r,i] = sf
 				
